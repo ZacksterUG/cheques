@@ -1,0 +1,68 @@
+# varfunc.h
+!buttons.cpp graphics.h keys_n_colors.h limits.h stdio.h stdlib.h string.h time.h varfunc.h #<#>
+!game.cpp graphics.h keys_n_colors.h limits.h stdio.h stdlib.h string.h time.h varfunc.h #<#>
+!gamedraw.cpp graphics.h keys_n_colors.h limits.h stdio.h stdlib.h string.h time.h varfunc.h #<#>
+!image.cpp graphics.h keys_n_colors.h limits.h stdio.h stdlib.h string.h time.h varfunc.h #<#>
+!main.cpp graphics.h keys_n_colors.h limits.h stdio.h stdlib.h string.h time.h varfunc.h #<#>
+ struct@button _type_ #<varfunc.h>
+ struct@cheq _type_ #<varfunc.h>
+CELLSIZEX : constexpr int #<varfunc.h>
+CELLSIZEY : constexpr int #<varfunc.h>
+CHEQCOUNT : constexpr int #<varfunc.h>
+CheqBMP : IMAGE*[] #<varfunc.h>
+Cheques : cheq[] #<varfunc.h>
+FIELDSIZE : constexpr int #<varfunc.h>
+STARTPOSX : constexpr int #<varfunc.h>
+STARTPOSY : constexpr int #<varfunc.h>
+Time : int #<varfunc.h>
+WINDOWSIZEX : constexpr int #<varfunc.h>
+WINDOWSIZEY : constexpr int #<varfunc.h>
+cellType : int[][] #<varfunc.h>
+checkCheqsExist() -> int #<varfunc.h>
+chosenCellX : int #<varfunc.h>
+chosenCellY : int #<varfunc.h>
+createButton(int posX, int posY, int sizeX, int sizeY, string str, IMAGE* img) -> button #<varfunc.h>
+createmask(IMAGE* p) -> IMAGE* #<varfunc.h>
+currentMove : int #<varfunc.h>
+drawAboutProgramm() -> void #<varfunc.h>
+drawButton(button& butt) -> void #<varfunc.h>
+drawCheques() -> void #<varfunc.h>
+drawField() -> void #<varfunc.h>
+drawGame() -> void #<varfunc.h>
+drawGameFinished(int type) -> void #<varfunc.h>
+drawHowToPlay() -> void #<varfunc.h>
+drawMainMenu() -> void #<varfunc.h>
+drawimage(int x, int y, IMAGE* m, IMAGE* p) -> void #<varfunc.h>
+freeButton(button& butt) -> void #<varfunc.h>
+freeCells() -> void #<varfunc.h>
+gameStatus : int #<varfunc.h>
+isButtonClicked(button& butt) -> int #<varfunc.h>
+isCeilFree(int x, int y) -> int #<varfunc.h>
+isCheqAvailable(int ID) -> int #<varfunc.h>
+main() -> int #<main.cpp>
+markAvailCells() -> int #<varfunc.h>
+markPath(int ID) -> void #<varfunc.h>
+mouseDetect() -> void #<varfunc.h>
+mousePressed : int #<varfunc.h>
+mouseReleased : int #<varfunc.h>
+moveCheq(int ID, int x, int y) -> int #<varfunc.h>
+queenBMP : IMAGE*[] #<varfunc.h>
+remCheqBMP : IMAGE*[] #<varfunc.h>
+removeDestroyedCheq() -> void #<varfunc.h>
+resize(IMAGE* p, int w, int h) -> IMAGE* #<varfunc.h>
+returnCheq(int x, int y) -> int #<varfunc.h>
+returnFieldXY(int& x, int& y) -> int #<varfunc.h>
+startGame() -> void #<varfunc.h>
+startedMoving : int #<varfunc.h>
+	button::posX : int #<varfunc.h>
+	button::posY : int #<varfunc.h>
+	button::sizeX : int #<varfunc.h>
+	button::sizeY : int #<varfunc.h>
+	button::str : string #<varfunc.h>
+	button::img : IMAGE* #<varfunc.h>
+	cheq::posX : int #<varfunc.h>
+	cheq::posY : int #<varfunc.h>
+	cheq::color : int #<varfunc.h>
+	cheq::queen : int #<varfunc.h>
+	cheq::exist : int #<varfunc.h>
+	cheq::justRemoved : int #<varfunc.h>
